@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                LOGO GSB 
+            </div>
+            <div id="link">
+                <a id='link' href="visitSearchForm.html">Accueil</a>
+                <a id='link' href="index.html">Déconnexion</a>
+            </div>
+        </nav>
+
+        <div class="box">
+            <div class="connectedUser">
+                <h2>Personnel</h2>
+            </div>
+        
+        
+        
+        <div class="resultVisit">
+           
+                <script type="text/javascript">
+ 
+                    var i = 0;
+         
+                    function addVisiteur()
+                    {
+                        if (i < 5)
+                        {
+                            var newRow = document.createElement('tr');
+         
+                            newRow.innerHTML = '<td> <input type="text" name="ID'+i+'" ><td> <input type="text" name="Nom'+i+'" ></td><td><input type="text" name="DateEmbauche'+i+'" ></td><td><input type="button" id="add_visiteur()" onClick="addVisiteur()" value="+" /><input type="button" value="-" onclick="removeVisiteur(this.parentNode)"></td>';
+         
+                            document.getElementById('visiteurs').appendChild(newRow);
+                            i++;
+                        }
+                    }
+         
+                    function removeVisiteur(element)
+                    {
+                        document.getElementById('visiteurs').removeChild(element.parentNode);
+                        i--;
+                    }
+         
+                </script>
+            
+                <table border="1" id="visiteurs">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Date d'Embauche</th>
+                    </tr>
+                    <tbody  >
+                        <tr >
+                            <td  >
+                                <input type="text" name="ID">
+                            </td>
+                            <td>
+                                <input type="text" name="Nom">
+                            </td>
+                            <td>
+                                <input type="text" name="DateEmbauche">
+                            </td>
+                            <td>
+                                <input type="button" id="add_visiteur()" onClick="addVisiteur()" value="+" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+                
+            </div>
+            <!-- <button id="creer">Creer un Rapport</button> -->
+            </div>
+
+           
+            
+</body>
+</html>

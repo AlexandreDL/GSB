@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre super site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                LOGO GSB 
+            </div>
+            <div id="link">
+                <a id='link' href="visitSearchForm.html">Accueil</a>
+                <a id='link' href="index.html">Déconnexion</a>
+            </div>
+        </nav>
+
+        <div class="box">
+            <div class="connectedUser">
+                <h2>Personnel</h2>
+            </div>
+            <!-- Visiteur Form -->
+                <div class="visiteurSearch">
+                    <h2>Recherche par Visiteur :</h2>
+                    <input type="text" placeholder="Nom :" id="userNameSearch">  
+                    <input type="text" placeholder="Id :" id="userIdSearch">
+                    <input type="date" placeholder="Date d'embauche :" id="userDateSearch">
+                    <input type="submit" id="userSubmit" value="Recherche">
+                </div>      
+                <!-- Rapport Form -->
+                <div class="rapportSearch">
+                    <h2>Recherche par Rapport :</h2>
+                    <input type="text" placeholder="Id" id="rapportIdSearch">  
+                    <input type="date" placeholder="Date d'embauche :" id="rapportDateSearch">
+                    <input type="text" placeholder="Bilan" id="rapportBilanSearch">
+                    <input type="text" placeholder="Motif" id="rapportMotifSearch">
+                    <input type="submit" id="rapportSubmit" value="Recherche">
+                </div>
+            </div>
+    </header>       
+</body>
+</html>
