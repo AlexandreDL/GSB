@@ -60,12 +60,12 @@ h2{
     justify-content: flex-start;
 }
 
-.login, .visiteurSearch, .rapportSearch {
+.login, .visiteurSearch, .rapportSearch, .rapport {
   background: #eceeee;
   border: 1px solid #42464b;
-  border-radius: 6px;
   height: 400px;
   width: 400px;
+  border-radius: 20px;
 }
 
 .visiteurSearch>h2, .rapportSearch>h2{
@@ -156,13 +156,17 @@ input[type="submit"]:active {
 
 .visiteurSearch, .rapportSearch{
     height: 300px;
-    flex-direction: column;
+}
+
+.visiteurSearch{
+    margin-right: 300px;
 }
 
 .connectedUser{
     background: #eceeee;
     border: 1px solid #42464b;
-    border-radius: 6px;
+    border-radius: 20px;
+    margin-right: 100px;
     height: 200px;
     width: 200px;
 }
@@ -175,4 +179,23 @@ input[type="submit"]:active {
 .connectedUser>h3{
     color: #64A2D4;
     padding: 50px 0 0 50px ;
+}
+
+#rapportDate{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: solid 30px #64A2D4;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#rapportMotif{
+    padding-top: 5px;
+    border-top: solid 2px black;
+    display: flex;
+}
+
+#rapportMotif>p{
+    margin-left: 30px;
 }
