@@ -55,12 +55,20 @@ h2{
     justify-content: space-around;
 }
 
+.boxVoir{
+    height: 80vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .boxrow{
     display: flex;
     justify-content: flex-start;
 }
 
-.login, .visiteurSearch, .rapportSearch, .rapport {
+.login, .visiteurSearch, .rapportSearch, .rapport, .visiteur {
   background: #eceeee;
   border: 1px solid #42464b;
   height: 400px;
@@ -73,7 +81,7 @@ h2{
     border-bottom: 10px solid  #64A2D4;
 }
 
-input[type="password"], input[type="text"], input[type="date"] {
+input[type="password"], input[type="text"], input[type="date"]{
   border: 1px solid #a1a3a3;
   border-radius: 4px;
   box-shadow: 0 1px #fff;
@@ -87,19 +95,6 @@ input[type="password"], input[type="text"], input[type="date"] {
 input[type="password"]:focus, input[type="text"]:focus, input[type="date"]:focus {
   box-shadow: 0 0 4px 1px #64A2D4;
   outline: 0;
-}
-
-input[type="checkbox"] {
-  cursor: pointer;
-  height: 16px;
-  opacity: 0;
-  position: relative;
-  width: 64px;
-}
-
-input[type="checkbox"]:checked {
-  left: 29px;
-  width: 58px;
 }
 
 input[type="submit"] {
@@ -120,10 +115,7 @@ input[type="submit"] {
   cursor:pointer;
   border: none;  
   background-color: #64A2D4;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius:5px;
+  border-radius: 5px;
   box-shadow: inset 0px 1px 0px #64A2D4, 0px 5px 0px 0px #457094, 0px 10px 5px #999;
 }
 
@@ -199,3 +191,49 @@ input[type="submit"]:active {
 #rapportMotif>p{
     margin-left: 30px;
 }
+
+#visiteurId{
+    border-top: solid 30px #64A2D4;
+    border-radius: 20px;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+#visiteurId, #visiteurName, #visiteurHiringDate{
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#visiteurName, #visiteurHiringDate {
+    padding-top: 5px;
+    border-top: solid 2px black;
+    justify-content: space-between;
+}
+
+button[type="btn"]{
+    width: 150px;
+    height:40px;
+    margin-left: 45vh;
+    margin-top: 30px;
+    display:block;
+    font-family:Arial, "Helvetica", sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    color:black;
+    text-decoration:none;
+    text-transform:uppercase;
+    text-align:center;
+    text-shadow:1px 1px 0px #64A2D4;
+    cursor:pointer;
+    position:relative;
+    border: none;  
+    background-color: #64A2D4;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 0px #64A2D4, 0px 5px 0px 0px #457094, 0px 10px 5px #999;
+}
+
+button[type="btn"]:active {
+    top:3px;
+    box-shadow: inset 0px 1px 0px #64A2D4, 0px 2px 0px 0px #64A2D4, 0px 5px 3px #999;
+  }
